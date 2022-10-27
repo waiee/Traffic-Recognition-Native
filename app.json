@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Traffic Recognition",
+    "slug": "Native",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/pictures/App-Logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/pictures/Logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "locationWhenInUsePermission": "Allow $(Traffic Recognition) to access your location"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(Traffic Recognition) to access your photos.",
+          "savePhotosPermission": "Allow $(Traffic Recognition) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow $(Traffic Recognition) to access your photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow $(Traffic Recognition) to save photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/pictures/Logo.png",
+        "backgroundColor": "#222831"
+      },
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION"
+      ],
+      "package": "com.ayaan278.Native"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6206a6ed-7b82-48af-9e64-eb34d9001f33"
+      }
+    }
+  }
+}
